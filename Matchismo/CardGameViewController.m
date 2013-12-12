@@ -41,8 +41,8 @@
             card = (PlayingCard *)[self.deck drawRandomCard];
             
             [sender setTitle:card.contents forState:UIControlStateNormal];
+            self.flipCount++;
         }
-        self.flipCount++;
     }
     
 }
