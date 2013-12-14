@@ -29,21 +29,23 @@
     
     PlayingCard *card = nil;
     
-    if (self.flipCount < 52) {
+    if ([sender.currentTitle length]) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    } else {
 
-        if ([sender.currentTitle length]) {
-            [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
-                              forState:UIControlStateNormal];
-            [sender setTitle:@"" forState:UIControlStateNormal];
-        } else {
+        card = (PlayingCard *)[self.deck drawRandomCard];
+
+        if (card) {
             [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
                               forState:UIControlStateNormal];
-            card = (PlayingCard *)[self.deck drawRandomCard];
-            
             [sender setTitle:card.contents forState:UIControlStateNormal];
+
             self.flipCount++;
         }
     }
+    
     
 }
 
@@ -51,6 +53,11 @@
 {
     if (!_deck) _deck = [[PlayingCardDeck alloc] init];
     return _deck;
+}
+
+- (Deck *)createDeck
+{
+    return [[PlayingCardDeck alloc] init];
 }
 
 
