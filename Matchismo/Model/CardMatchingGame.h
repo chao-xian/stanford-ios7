@@ -12,7 +12,6 @@
 
 @interface CardMatchingGame : NSObject
 
-// Designated initialiser - because it calls [super init]
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck;
 
 - (void)chooseCardAtIndex:(NSUInteger)index;
