@@ -10,17 +10,6 @@
 
 @implementation PlayingCard
 
-- (int)match:(NSArray *)otherCards
-{
-    int score = 0;
-    
-    if ([otherCards count] == 1) {
-        PlayingCard *otherCard = [otherCards firstObject];
-    }
-    
-    return score;
-}
-
 - (NSString *)contents
 {
     NSArray *rankStrings = [PlayingCard rankStrings];
