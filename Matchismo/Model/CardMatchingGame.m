@@ -28,7 +28,7 @@
     if (self) {
         for (int i = 0; i < count; i++) {
             Card *card = [deck drawRandomCard];
-            if (card) {
+            if (self) {
                 [self.cards addObject:card];
             } else {
                 self = nil;
