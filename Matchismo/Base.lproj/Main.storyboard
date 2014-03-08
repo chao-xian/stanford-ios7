@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A2093" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -160,7 +160,7 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JAG-rz-eLZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GB2-TD-Oio">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d13-3h-zG5">
                                 <rect key="frame" x="20" y="439" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -171,7 +171,19 @@
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="flipsLabel" destination="GB2-TD-Oio" id="PUa-1G-n2I"/>
+                        <outlet property="scoreLabel" destination="d13-3h-zG5" id="Ocr-Up-FVG"/>
+                        <outletCollection property="cardButtons" destination="yDC-Jc-ghG" id="4Fd-e4-eaC"/>
+                        <outletCollection property="cardButtons" destination="Vmp-0C-R3d" id="faA-Mu-she"/>
+                        <outletCollection property="cardButtons" destination="Bkc-rP-sHz" id="dkg-n3-JQk"/>
+                        <outletCollection property="cardButtons" destination="2g4-Ro-3bf" id="lIm-WD-RJU"/>
+                        <outletCollection property="cardButtons" destination="7tv-ai-eHW" id="zRo-HO-itq"/>
+                        <outletCollection property="cardButtons" destination="4yY-k5-ky1" id="JVP-5G-t9l"/>
+                        <outletCollection property="cardButtons" destination="Rju-es-tzn" id="AFE-hS-su3"/>
+                        <outletCollection property="cardButtons" destination="c98-Dx-hNP" id="w7U-S6-A30"/>
+                        <outletCollection property="cardButtons" destination="RmO-Nf-ihh" id="bBR-Ua-XUb"/>
+                        <outletCollection property="cardButtons" destination="z7Y-Gl-ahl" id="oSK-zg-pZU"/>
+                        <outletCollection property="cardButtons" destination="0mD-A9-7SP" id="kN4-vA-ZhX"/>
+                        <outletCollection property="cardButtons" destination="hRG-Tk-HlI" id="pPG-TY-aa0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

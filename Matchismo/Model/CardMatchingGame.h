@@ -12,6 +12,7 @@
 
 @interface CardMatchingGame : NSObject
 
+// designated initialiser - is this because of the (instancetype)?
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck;
 
 - (void)chooseCardAtIndex:(NSUInteger)index;
